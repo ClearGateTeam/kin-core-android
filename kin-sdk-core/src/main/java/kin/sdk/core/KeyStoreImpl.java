@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import java.util.Collections;
 import java.util.List;
 import org.stellar.sdk.KeyPair;
@@ -56,6 +57,7 @@ class KeyStoreImpl implements KeyStore {
     @Override
     public Account newAccount(String passphrase) {
         KeyPair newAccount = KeyPair.random();
+        Log.d("DEBUG", "seed = " + String.valueOf(newAccount.getSecretSeed()));
         addKeyPair(newAccount, passphrase);
         return new Account(String.valueOf(newAccount.getSecretSeed()), newAccount.getAccountId());
     }

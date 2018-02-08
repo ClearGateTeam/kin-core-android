@@ -21,7 +21,7 @@ public class ServiceProvider {
      */
     public static final int NETWORK_ID_TEST = 2;
 
-    private static final String MAIN_NETWORK_ISSUER = "GBGFNADX2FTYVCLDCVFY5ZRTVEMS4LV6HKMWOY7XJKVXMBIWVDESCJW5";
+    private static final String MAIN_NETWORK_ISSUER = "GAQ4HYZJ5PSYBMHXAX75DKN4YGHFIEGZYBDTGFV7ZHYGQWVGFHOW75CB";
     private static final String TEST_NETWORK_ISSUER = "GBA2XHZRUAHEL4DZX7XNHR7HLBAUYPRNKLD2PIUKWV2LVVE6OJT4NDLM";
 
     private final String providerUrl;
